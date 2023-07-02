@@ -22,6 +22,7 @@ while True:
         orangeCount += 1
     else:
         print("Sorry, I don't understand your request. Please try again.")
+    # A good programmer would add a "fool-proofing" statement to the following if statement
     if input(f"Would you like to buy another piece of fruit? y/n ") == 'n':
         break
 
@@ -33,6 +34,6 @@ print(f"Order for {customerName} \n{appleCount} apple(s) at $2 apiece"
 subtotal = (appleCount * 2)+(grapeCount * 1)+(orangeCount * 3)
 tax = subtotal * 0.05
 
-# <variable>:.2f formats to 2 decimals no matter what. Makes more sense for money
+# [<variable>:.2f] formats to 2 decimals no matter what. Makes more sense for money
 print(f"Sub Total: ${subtotal} \n5% Tax: ${tax:.2f}"
       f"\nTotal: ${subtotal + tax:.2f}")
